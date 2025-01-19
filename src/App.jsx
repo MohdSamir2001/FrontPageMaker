@@ -72,19 +72,17 @@ const App = () => {
     >
       <div className="relative">
         <FrontPage />
-        {!show && (
-          <div className="absolute top-0 z-20">
-            <DetailsPage />
-          </div>
-        )}
-        {show && (
-          <div className="absolute top-0 z-10">
-            <DownloadPage />
-          </div>
-        )}
+        <div className={`absolute top-0 ${!show ? "z-20" : "z-10"}`}>
+          <DetailsPage />
+        </div>
+        <div className={`absolute top-0 ${show ? "z-20" : "z-10"}`}>
+          <DownloadPage />
+        </div>
         <button
           onClick={handleDownloadPdf}
-          className="w-[90%] left-5  text-center absolute z-10 top-80 bg-red-500 text-white text-2xl rounded-md p-2 font-semibold"
+          className={`w-[90%] left-5  text-center absolute ${
+            show ? "z-20" : "z-10"
+          } top-80 bg-red-500 text-white text-2xl rounded-md p-2 font-semibold`}
         >
           Print
         </button>

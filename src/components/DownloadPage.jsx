@@ -1,9 +1,7 @@
 import React from "react";
 
 const DownloadPage = () => {
-  return (
-    <div className="promax:bg-slate-500 p-4 promax:min-h-[932px] w-[430px]"></div>
-  );
+  return <div className="bg-black h-screen w-screen"></div>;
 };
 
 export default DownloadPage;

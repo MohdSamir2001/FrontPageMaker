@@ -42,7 +42,6 @@ const DetailsPage = () => {
     setSessionNumber(ref10.current.value); // Enter Your Session
     setSemesterNumber(ref11.current.value); // Enter Your Semester
 
-    console.log(studentName);
     ref1.current.value = "";
     ref2.current.value = "";
     ref3.current.value = "";
