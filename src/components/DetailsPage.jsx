@@ -65,7 +65,7 @@ const DetailsPage = () => {
             {placeholder === "Choose Profession" ? (
               <select
                 ref={refs[index]}
-                className="p-1 border rounded-md text-gray-600 text-lg"
+                className="p-1 border rounded-md text-gray-600 font-semibold"
               >
                 <option value="">Choose Profession</option>
                 <option value="Assistant Professor">Assistant Professor</option>
@@ -76,7 +76,7 @@ const DetailsPage = () => {
                 ref={refs[index]}
                 type="text"
                 placeholder={placeholder}
-                className="w-full border rounded-md p-1 text-lg"
+                className="w-full border rounded-md p-1 font-semibold"
               />
             )}
           </React.Fragment>
