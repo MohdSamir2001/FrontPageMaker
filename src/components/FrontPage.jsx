@@ -21,7 +21,7 @@ const FrontPage = () => {
         <img src={logo} alt="" />
         <h1 className="font-semibold text-2xl">A Lab Practical File</h1>
         <div className="mt-12 flex justify-center flex-col items-center">
-          <h1 className="font-semibold text-5xl">{subjectName + "Lab"}</h1>
+          <h1 className="font-semibold text-5xl">{subjectName + " Lab"}</h1>
           <h1 className="font-semibold mt-3 text-2xl">
             {"LAB CODE : " + subjectCode}
           </h1>
