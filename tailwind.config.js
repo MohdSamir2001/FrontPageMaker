@@ -7,6 +7,7 @@ module.exports = {
         xr: "413px",
         pro: "389px",
         promax: "429px",
+        s8: "359px",
       },
     },
   },

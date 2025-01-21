@@ -55,7 +55,7 @@ const DetailsPage = () => {
     ref11.current.value = "";
   };
   return (
-    <div className="promax:bg-slate-500  xr:bg-slate-500 xr:w-[414px] xr:min-h-[896px] pro:bg-slate-500 pro:w-[390px] pro:min-h-[844px] se:bg-slate-500 se:w-[375px] se:min-h-[667px] p-4 promax:min-h-[932px] w-[430px]">
+    <div className="promax:bg-slate-500   s8:bg-slate-500 s8:w-[360px] s8:min-h-[740px] xr:bg-slate-500 xr:w-[414px] xr:min-h-[896px] pro:bg-slate-500 pro:w-[390px] pro:min-h-[844px] se:bg-slate-500 se:w-[375px] se:min-h-[667px] p-4 promax:min-h-[932px] w-[430px]">
       <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
         <input
           ref={ref1}
