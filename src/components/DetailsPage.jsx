@@ -64,6 +64,7 @@ const DetailsPage = () => {
           <React.Fragment key={index}>
             {placeholder === "Choose Profession" ? (
               <select
+                required
                 ref={refs[index]}
                 className="p-1 border rounded-md text-gray-600 font-semibold"
               >
@@ -75,6 +76,7 @@ const DetailsPage = () => {
               <input
                 ref={refs[index]}
                 type="text"
+                required
                 placeholder={placeholder}
                 className="w-full border rounded-md p-1 font-semibold"
               />
