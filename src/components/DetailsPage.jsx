@@ -4,6 +4,7 @@ import PageInfoContext from "../utils/DetailsContext";
 const DetailsPage = () => {
   const {
     setShow,
+    show,
     setStudentName,
     setTeacherName,
     setSubjectName,
@@ -139,9 +140,11 @@ const DetailsPage = () => {
           placeholder="Enter Your Semester eg.5"
           type="text"
         />
-        <button className="w-full bg-green-400 text-white text-2xl rounded-md p-2 font-semibold">
-          Submit
-        </button>
+        {!show && (
+          <button className="w-full bg-green-400 text-white text-2xl rounded-md p-2 font-semibold">
+            Submit
+          </button>
+        )}
       </form>
     </div>
   );
