@@ -4,7 +4,6 @@ import FrontPage from "./components/FrontPage";
 import DetailsPage from "./components/DetailsPage";
 import PageInfoContext from "./utils/DetailsContext";
 import { useState } from "react";
-import DownloadPage from "./components/DownloadPage";
 
 const App = () => {
   const [studentName, setStudentName] = useState("");
@@ -70,17 +69,23 @@ const App = () => {
         setBranchName,
       }}
     >
-      <div className="relative">
+      <div className="relative flex items-center justify-center">
         <FrontPage />
-        <div className={`absolute top-0 ${!show ? "z-20" : "z-10"}`}>
+        <div
+          className={`absolute bg-slate-700 h-full w-full top-0 ${
+            !show ? "z-20" : "z-10"
+          }`}
+        >
           <DetailsPage />
         </div>
-        <div className={`absolute top-0 ${show ? "z-20" : "z-10"}`}>
-          <DownloadPage />
-        </div>
+        <div
+          className={`absolute h-full bg-slate-700 w-full top-0 ${
+            show ? "z-20" : "z-10"
+          }`}
+        ></div>
         <button
           onClick={handleDownloadPdf}
-          className={`w-[90%] left-5  text-center absolute ${
+          className={`w-[90%] text-center absolute ${
             show ? "z-20" : "z-10"
           } top-80 bg-red-500 text-white text-2xl rounded-md p-2 font-semibold`}
         >

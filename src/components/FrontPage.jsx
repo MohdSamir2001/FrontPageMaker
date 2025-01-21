@@ -16,7 +16,7 @@ const FrontPage = () => {
     branchName,
   } = useContext(PageInfoContext);
   return (
-    <div id="content-to-pdf">
+    <div id="content-to-pdf" className="">
       <div className="pl-10 pr-6 py-8  flex  flex-col items-center">
         <img src={logo} alt="" />
         <h1 className="font-semibold text-2xl">A Lab Practical File</h1>
